@@ -1,2 +1,2 @@
 # SCA-Paper-SDG
-Research paper introducing the Synthetic Data Generation process applied to CDMs.
+Research papers supporting the ***Spacecraft Collision Avoidance using Deep Learning*** research project.
