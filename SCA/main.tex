@@ -1,0 +1,117 @@
+\documentclass[3p, twocolumn]{elsarticle}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{Cranfield University}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% Create a new command to change the format of the date to be displayed in the document.
+\usepackage{datetime}
+\newdateformat{dmydate}{\THEDAY\ \monthname[\THEMONTH] \THEYEAR}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Spacecraft Collision Avoidance using Deep Learning algorithms\tnoteref{t1}} 
+\tnotetext[t1]{This document is the results of the individual research project developed in the framework of the MSc. Astronautics and Space Engineering from Cranfield University.}
+
+
+
+\author{José Javier Rosales Ruiz \corref{cor1}} %\fnref{fn1}}
+\ead{j.rosales-ruiz@cranfield.ac.uk} 
+% \affiliation[1]{organization={Elsevier B.V.}, addressline={Radarweg 29}, postcode={1043 NX}, city={Amsterdam}, country={The Netherlands}}
+
+
+\author{Nicola Garzaniti\corref{cor2}} 
+\ead{nicola.garzaniti@cranfield.ac.uk}
+% \affiliation[2]{organization={Sayahna Foundation}, addressline={JWRA 34, Jagathy}, city={Trivandrum}, postcode={695014}, country={India}}
+            
+\cortext[cor1]{Author}
+\cortext[cor2]{Supervisor}
+
+
+\begin{abstract}
+\input{01_abstract.tex}
+\end{abstract}
+
+\begin{keyword}
+Spacecraft Collision Avoidance \sep Artificial Intelligence \sep Deep Learning \sep Transformers \sep Python
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+%\section{The Elsevier article class}
+%
+%\paragraph{Installation} If the document class \emph{elsarticle} is not available on your computer, you can download and install the system package \emph{texlive-publishers} (Linux) or install the \LaTeX\ package \emph{elsarticle} using the package manager of your \TeX\ installation, which is typically \TeX\ Live or Mik\TeX.
+%
+%\paragraph{Usage} Once the package is properly installed, you can use the document class \emph{elsarticle} to create a manuscript. Please make sure that your manuscript follows the guidelines in the Guide for Authors of the relevant journal. It is not necessary to typeset your manuscript in exactly the same way as an article, unless you are submitting to a camera-ready copy (CRC) journal.
+%
+%\paragraph{Functionality} The Elsevier article class is based on the standard article class and supports almost all of the functionality of that class. In addition, it features commands and options to format the
+%\begin{itemize}
+%\item document style
+%\item baselineskip
+%\item front matter
+%\item keywords and MSC codes
+%\item theorems, definitions and proofs
+%\item lables of enumerations
+%\item citation style and labeling.
+%\end{itemize}
+%
+%\section{Front matter}
+%
+%The author names and affiliations could be formatted in two ways:
+%\begin{enumerate}[(1)]
+%\item Group the authors per affiliation.
+%\item Use footnotes to indicate the affiliations.
+%\end{enumerate}
+%See the front matter of this document for examples. You are recommended to conform your choice to the journal you are submitting to.
+%
+%\section{Bibliography styles}
+%
+%There are various bibliography styles available. You can select the style of your choice in the preamble of this document. These styles are Elsevier styles based on standard styles like Harvard and Vancouver. Please use Bib\TeX\ to generate your bibliography and include DOIs whenever available.
+%
+%Here are two sample references: \cite{Feynman1963118,Dirac1953888}.
+
+\section*{References}
+
+\bibliography{refs}
+
+\end{document}
